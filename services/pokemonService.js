@@ -8,7 +8,7 @@ export default class PokemonService {
     try {
       const { data: pokemon } = await Axios.get(`${apiEndpoint}pokemonSearch/${pokemonName}`);
       return pokemon;
-    } catch (error) {
+    } catch (e) {
         console.error('Failure!');
         console.error(e.response.status);
         throw new Error(e);
