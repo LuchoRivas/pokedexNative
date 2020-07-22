@@ -16,13 +16,15 @@ const Search = () => {
   return(
     <React.Fragment>
       <TextInput
-        style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
+        style={{ height: 40, borderColor: 'lightgray', borderWidth: 1, width: '80%', borderRadius: 5, marginBottom: 15 }}
         placeholder={'Search'}
         onChangeText={text => setText(text)}
         value={value}
       />
       <Button
         title="Buscar"
+        color="#343a40"
+        selectionColor="red"
         onPress={() => manageSearch(value)}
       />
     </React.Fragment>

@@ -6,7 +6,7 @@ import Search from './search';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Pokedex native soon!</Text>
+      <Text style={{ color: '#fff', marginBottom: 10 }}>Pokedex native soon!</Text>
       <StatusBar style="auto" />
       <Search></Search>
     </View>
@@ -16,8 +16,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#343a40',
     alignItems: 'center',
     justifyContent: 'center',
+    color: '#fff'
   },
 });
