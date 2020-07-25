@@ -5,14 +5,8 @@ const apiEndpoint = `${envConfig.apiUrl}/pokemon/`;
 export default class PokemonService {
 
   static getPokemonByName = async (pokemonName) => {
-    try {
       const { data: pokemon } = await Axios.get(`${apiEndpoint}pokemonSearch/${pokemonName}`);
       return pokemon;
-    } catch (e) {
-        console.error('Failure!');
-        console.error(e.response.status);
-        throw new Error(e);
-    }
   }
   
   static getPokemosnByType = async (type, pagination) => {
