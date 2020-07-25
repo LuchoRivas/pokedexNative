@@ -1,0 +1,2 @@
+# pokedexNative
+Practicando React Native 😁
